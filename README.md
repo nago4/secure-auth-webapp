@@ -1,6 +1,6 @@
 # セキュア認証Webアプリケーション
 
-セッションベース認証システムを使用した高セキュリティWebアプリケーション
+セッションベース認証システムを使用したWebアプリケーション
 
 ## 🚀 プロジェクト概要
 
@@ -99,7 +99,7 @@ src/
 ## 🖼️ スクリーンショット
 
 ### 1. メインページ - セッション認証システム
-![メインページ](./screenshots/main-page.png)
+![メインページ](C:\Users\rs22095L\デスクトップ\web\secure-auth-webapp\img\スクリーンショット 2025-08-30 123806.png)
 *セッションベース認証システムの紹介ページ。実装機能の詳細説明を含む*
 
 ### 2. ログインページ - セキュアなログイン
@@ -237,38 +237,9 @@ const calculatePasswordStrength = (password: string): number => {
 };
 ```
 
-### 動的ボタン生成
-```typescript
-{Array.from({ length: Math.min(Math.max(1, count), 20) }, (_, index) => (
-  <PasswordChangeButton key={index} number={index + 1} />
-))}
-```
-
-## 📊 評価ポイント
-
-### README.md (5点満点)
-- ✅ 詳細な機能説明
-- ✅ 5枚以上のスクリーンショット
-- ✅ セットアップ手順
-- ✅ 技術的詳細
-- ✅ 創意工夫の説明
-
-### ソースコード (5点満点)
-- ✅ セッションベース認証の完全実装
-- ✅ 2つ以上の追加認証機能
-- ✅ データ永続化機能
-- ✅ セキュリティ考慮（HTTP-only Cookie等）
-- ✅ 型安全性（TypeScript + Zod）
-
 ## 🎊 まとめ
 
 本アプリケーションは、セッションベース認証を中核とした高セキュリティWebアプリケーションです。特に、カウンタ値に応じて動的に変化するパスワード変更ボタンシステムは、実用性と遊び心を両立した独創的な機能です。パスワード強度の視覚化、データの永続化、レスポンシブデザインなど、現代的なWebアプリケーションに求められる全ての要素を包含しています。
-
-## 📝 ライセンス
-
-MIT License
-
-アプリケーションは http://localhost:3000 で確認できます。
 
 ## 機能
 
@@ -281,18 +252,6 @@ MIT License
 ### ユーザー管理
 - **プロフィール表示**: 認証されたユーザーの情報表示
 - **プロフィール編集**: aboutSlugとaboutContentの編集機能
-
-## テストユーザー
-
-シードデータには以下のテストユーザーが含まれています：
-
-### 管理者ユーザー
-- **Email**: admin01@example.com / **Password**: password1111
-- **Email**: admin02@example.com / **Password**: password2222
-
-### 一般ユーザー
-- **Email**: user01@example.com / **Password**: password1111
-- **Email**: user02@example.com / **Password**: password2222
 
 ## 技術スタック
 
