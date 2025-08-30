@@ -38,33 +38,6 @@ const Page: React.FC = () => {
           </div>
         ))}
       </div>
-
-      {/* 実装機能の詳細 */}
-      <div className="mt-8 bg-gray-50 rounded-lg p-4">
-        <h3 className="text-lg font-bold text-gray-800 mb-3">実装されている認証・認可機能</h3>
-        <div className="space-y-2 text-sm text-gray-700">
-          <div className="flex items-start gap-2">
-            <span className="text-green-600 font-bold">✓</span>
-            <span><strong>セッションベース認証:</strong> Cookie を使用したセキュアなセッション管理</span>
-          </div>
-          <div className="flex items-start gap-2">
-            <span className="text-green-600 font-bold">✓</span>
-            <span><strong>パスワード強度表示:</strong> サインアップ時のリアルタイム強度チェック（1-10レベル）</span>
-          </div>
-          <div className="flex items-start gap-2">
-            <span className="text-green-600 font-bold">✓</span>
-            <span><strong>パスワード変更機能:</strong> ログイン後の安全なパスワード更新</span>
-          </div>
-          <div className="flex items-start gap-2">
-            <span className="text-green-600 font-bold">✓</span>
-            <span><strong>データ永続化:</strong> セッション維持によるユーザーデータの保持</span>
-          </div>
-          <div className="flex items-start gap-2">
-            <span className="text-green-600 font-bold">✓</span>
-            <span><strong>認可機能:</strong> ログイン必須ページの適切なアクセス制御</span>
-          </div>
-        </div>
-      </div>
     </main>
   );
 };
